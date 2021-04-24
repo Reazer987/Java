@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 import static java.lang.Math.random;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2ec727e6a015858316108127fcfeb9c1a708ec2e
 public class Application {
     public static  void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -12,6 +15,7 @@ public class Application {
         System.out.println("Генерирайте число между 1 и 10");
         int biosRandomNum = scanner.nextInt();
 
+<<<<<<< HEAD
         while (biosRandomNum<1 || biosRandomNum>10){
             System.out.println("Опитай пак");
             biosRandomNum= scanner.nextInt();
@@ -45,11 +49,50 @@ public class Application {
         }
 
         }
+=======
+         while (biosRandomNum<1 || biosRandomNum>10){
+             System.out.println("Опитай пак");
+             biosRandomNum= scanner.nextInt();
+
+         }
+
+         System.out.println("Изберете емоция : + или - ");
+        String emotion = scanner.next();
+
+
+         if (biosRandomNum%2 == 0 ){
+
+      switch (emotion){
+          case "+" : System.out.println("Продуктивност");
+
+          break;
+          case "-" : System.out.println("Трагедия");
+
+              break;
+
+      }
+
+         }
+         else { switch (emotion) {
+             case "+":
+                 System.out.println("Дружелюбност");
+                 break;
+             case "-":
+                 System.out.println("Хаос");
+                 break;
+         }
+
+         }
+>>>>>>> 2ec727e6a015858316108127fcfeb9c1a708ec2e
 
         Random random = new Random();
         int max = 100;
         int min = 1;
+<<<<<<< HEAD
         int tempEmotion = min + random.nextInt(max); // ako se precaka neshto !!!!!!!!
+=======
+         int tempEmotion = min + random.nextInt(max); // ako se precaka neshto !!!!!!!!
+>>>>>>> 2ec727e6a015858316108127fcfeb9c1a708ec2e
 
         if (tempEmotion >= 60 && tempEmotion<= 80 && tempEmotion % 3 == 0 ){
             System.out.println("Активиране на негативна емоция ");
@@ -80,6 +123,7 @@ public class Application {
                 case "ДЕПРЕСИЯ":
                     System. out.println("Трудно е да си робот :(");
                     break;
+<<<<<<< HEAD
             }
 
         }
@@ -152,3 +196,14 @@ public class Application {
 
     }
 }
+=======
+        }
+
+        }
+
+
+
+
+    }
+}
+>>>>>>> 2ec727e6a015858316108127fcfeb9c1a708ec2e
